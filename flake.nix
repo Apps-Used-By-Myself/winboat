@@ -7,7 +7,8 @@
     let
       pkgs = import nixpkgs { system = "x86_64-linux"; };
       packageJson = builtins.fromJSON (builtins.readFile ./package.json);
-      version = packageJson.version;
+      # version = packageJson.version;
+      version = "0.8.7.0";
 
       usb_ids = builtins.toFile "usb.ids" (builtins.readFile ./data/usb.ids);
       iconFile = ./icons/icon.png;
@@ -16,7 +17,7 @@
         version = version;
 
         src = pkgs.fetchurl {
-          url = "https://github.com/TibixDev/winboat/releases/download/v${version}/winboat-${version}-x64.tar.gz";
+          url = "https://github.com/Apps-Used-By-Myself/winboat/releases/download/v${version}/winboat-${version}-x64.tar.gz";
           sha256 = "0wnbdnm1w59xyhw55bqac0jak16nvcs91qixnxyrnq2b46gpvmg0";
         };
         

@@ -43,7 +43,7 @@ jobs:
 
             VERSION="${VERSION#v}"
 
-            URL="https://github.com/TibixDev/winboat/releases/download/v${VERSION}/winboat-${VERSION}-x64.tar.gz"
+            URL="https://github.com/Apps-Used-By-Myself/winboat/releases/download/v${VERSION}/winboat-${VERSION}-x64.tar.gz"
 
             echo "Prefetching from: $URL"
             HASH=$(nix-prefetch-url "$URL")
