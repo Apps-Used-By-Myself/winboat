@@ -18,7 +18,7 @@
 
         src = pkgs.fetchurl {
           url = "https://github.com/Apps-Used-By-Myself/winboat/releases/download/v${version}/winboat-${version}-x64.tar.gz";
-          sha256 = "0wnbdnm1w59xyhw55bqac0jak16nvcs91qixnxyrnq2b46gpvmg0";
+          sha256 = "19sqw5alqikyad8q4fbwb6pkn73mh741s171h5b8ps8fmn42vv68";
         };
         
         nativeBuildInputs = [
